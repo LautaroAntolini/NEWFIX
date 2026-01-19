@@ -12,9 +12,20 @@ body {
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #0ea5e9, #2563eb);
-  padding: 80px 20px;
+  position: relative;
+  background-image: url("imagenes/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
   text-align: center;
+  color: #fff;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .hero-content {
@@ -140,3 +151,4 @@ footer a {
   color: #38bdf8;
   text-decoration: none;
 }
+
