@@ -29,6 +29,8 @@ body {
 }
 
 .hero-content {
+  position: relative;
+  z-index: 1;
   max-width: 800px;
   margin: auto;
 }
@@ -151,4 +153,5 @@ footer a {
   color: #38bdf8;
   text-decoration: none;
 }
+
 
