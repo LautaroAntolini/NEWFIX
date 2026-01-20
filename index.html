@@ -6,8 +6,6 @@
   <title>NewFix | Expertos en Potenciar tu PC</title>
   <meta name="description" content="Servicio técnico especializado. Reparación, limpieza y armado de PC Gamer. ¡Tu equipo como nuevo hoy mismo!">
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
@@ -36,43 +34,37 @@
         <p>¿Cansado de la lentitud y los ruidos? En <strong>NewFix</strong> optimizamos tu equipo con repuestos de alta calidad y garantía asegurada.</p>
         
         <div class="hero-buttons">
-          <a class="btn whatsapp" href="https://wa.me/5491164325840" target="_blank">
-            <i class="fab fa-whatsapp"></i> Presupuesto Gratis por WhatsApp
-          </a>
-          <a class="btn instagram" href="https://www.instagram.com/newfix.arg/" target="_blank">
-            <i class="fab fa-instagram"></i> Mirá nuestros trabajos
-          </a>
+          <a class="btn whatsapp" href="https://wa.me/5491164325840" target="_blank">📲 Presupuesto Gratis por WhatsApp</a>
+          <a class="btn instagram" href="https://www.instagram.com/newfix.arg/" target="_blank">📸 Mirá nuestros trabajos</a>
         </div>
       </div>
     </section>
 
-    <section id="servicios" class="services-section">
-      <div class="container">
-        <div class="section-title">
-          <h3>🔧 ¿Qué podemos hacer por vos?</h3>
-          <p>Servicios profesionales para que tu PC vuele</p>
+    <section id="servicios" class="container">
+      <div class="section-title">
+        <h3>🔧 ¿Qué podemos hacer por vos?</h3>
+        <p>Servicios profesionales para que tu PC vuele</p>
+      </div>
+      <div class="services-grid">
+        <div class="card">
+          <div class="icon-box">🖥️</div>
+          <h4>PC Gamer a medida</h4>
+          <p>Armamos la máquina de tus sueños para que juegues sin lag.</p>
         </div>
-        <div class="services-grid">
-          <div class="card">
-            <div class="icon-box">🖥️</div>
-            <h4>PC Gamer a medida</h4>
-            <p>Armamos la máquina de tus sueños para que juegues sin lag.</p>
-          </div>
-          <div class="card">
-            <div class="icon-box">🛠️</div>
-            <h4>Reparación de Hardware</h4>
-            <p>Diagnóstico preciso y cambio de componentes dañados.</p>
-          </div>
-          <div class="card">
-            <div class="icon-box">🧹</div>
-            <h4>Limpieza Premium</h4>
-            <p>Eliminamos el polvo y cambiamos pasta térmica para evitar calor.</p>
-          </div>
-          <div class="card">
-            <div class="icon-box">⚡</div>
-            <h4>Optimización Total</h4>
-            <p>Formateo e instalación de software para máxima velocidad.</p>
-          </div>
+        <div class="card">
+          <div class="icon-box">🛠️</div>
+          <h4>Reparación de Hardware</h4>
+          <p>Diagnóstico preciso y cambio de componentes dañados.</p>
+        </div>
+        <div class="card">
+          <div class="icon-box">🧹</div>
+          <h4>Limpieza Premium</h4>
+          <p>Eliminamos el polvo y cambiamos pasta térmica para evitar calor.</p>
+        </div>
+        <div class="card">
+          <div class="icon-box">⚡</div>
+          <h4>Optimización Total</h4>
+          <p>Formateo e instalación de software para máxima velocidad.</p>
         </div>
       </div>
     </section>
@@ -84,17 +76,17 @@
         </div>
         <div class="steps-grid">
           <div class="step">
-            <div class="step-number">01</div>
+            <span class="step-num">01</span>
             <h4>Honestidad</h4>
             <p>Te explicamos qué tiene tu PC sin vueltas ni costos ocultos.</p>
           </div>
           <div class="step">
-            <div class="step-number">02</div>
+            <span class="step-num">02</span>
             <h4>Rapidez</h4>
             <p>Sabemos que la necesitás, por eso trabajamos con tiempos récord.</p>
           </div>
           <div class="step">
-            <div class="step-number">03</div>
+            <span class="step-num">03</span>
             <h4>Pasión</h4>
             <p>Cuidamos tu equipo como si fuera nuestro. Detallismo puro.</p>
           </div>
@@ -103,10 +95,10 @@
     </section>
 
     <section id="contacto" class="contact-section">
-      <div class="contact-card">
+      <div class="contact-box">
         <h3>📞 No esperes más</h3>
         <p>Hacé clic abajo y coordinamos la revisión de tu equipo hoy mismo.</p>
-        <a class="btn whatsapp btn-large pulse" href="https://wa.me/5491164325840" target="_blank">Hablar con un Técnico Ahora</a>
+        <a class="btn whatsapp btn-large" href="https://wa.me/5491164325840" target="_blank">Hablar con un Técnico Ahora</a>
       </div>
     </section>
   </main>
@@ -123,13 +115,10 @@
   </footer>
 
   <script>
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', () => {
       const header = document.getElementById('main-header');
-      if (window.scrollY > 50) {
-        header.classList.add('header-scrolled');
-      } else {
-        header.classList.remove('header-scrolled');
-      }
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
     });
   </script>
 </body>
