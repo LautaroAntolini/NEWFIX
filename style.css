@@ -72,7 +72,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 120px 20px 60px;
-  background-image: url("hero.jpg");
+  background-image: url("imagenes/hero.jpg");
   background-position: center 30%; /* Ajustado para que se vea la acción del destornillador */
   background-repeat: no-repeat;
   background-size: cover;
@@ -250,4 +250,5 @@ body {
 .footer-link.ig:hover {
   color: #e4405f; /* Color representativo de Instagram */
 }
+
 
