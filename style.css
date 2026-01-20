@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #2563eb;   /* Azul NewFix */
+  --secondary: #22c55e; /* Verde WhatsApp */
+  --accent: #7c3aed;    /* Violeta tecnológico */
+  --bg-dark: #0b1220;   /* Fondo principal */
+  --bg-card: #020617;   /* Tarjetas */
+  --text-light: #e5e7eb;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -183,3 +192,4 @@ footer a {
     font-size: 16px;
   }
 }
+
