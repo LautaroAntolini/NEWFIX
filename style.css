@@ -73,13 +73,19 @@ body {
 /* HERO SECTION */
 .hero {
   position: relative;
-  min-height: 90vh;
+  /* CAMBIO CLAVE: Usamos min-height: 100vh para que ocupe TODA la pantalla */
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("imagenes/hero.jpg") no-repeat center center/cover;
-  padding: 120px 20px 80px;
   text-align: center;
+  /* Configuración del fondo para que se estire y cubra todo */
+  background-image: url("hero.jpg");
+  background-position: center center; /* Centra la imagen */
+  background-repeat: no-repeat;
+  background-size: cover; /* ESTO es lo que hace que se "estire" para cubrir sin deformarse */
+  padding: 20px;
 }
 
 .hero::before {
@@ -289,3 +295,4 @@ footer {
     padding: 60px 20px;
   }
 }
+
