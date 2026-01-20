@@ -38,9 +38,17 @@ body {
   align-items: center;
 }
 
+.logo {
+  background: transparent;
+  padding: 6px 10px;
+}
+
 .logo img {
-  height: 48px;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+  height: 44px;
+  background: #ffffff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  object-fit: contain;
 }
 
 .nav a {
@@ -198,3 +206,4 @@ footer {
     font-size: 32px;
   }
 }
+
